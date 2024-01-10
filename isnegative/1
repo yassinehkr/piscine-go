@@ -1,0 +1,11 @@
+package main
+
+import "github.com/01-edu/z01"
+
+func main() {
+	if number < 0 {
+		z01.Println("T")
+	}
+	z01.Println("F")
+		num := -5
+}
