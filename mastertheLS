@@ -1,1 +1,1 @@
-ls -Ampt | tr -d ""
+ls -lAt --ignore=".*" --almost-all --classify | awk '{if ($1 ~ /^d/) {print $NF "/"} else {print $NF}}' | tr '\n' ',' | sed 's/,$/\n/' > mastertheLS
