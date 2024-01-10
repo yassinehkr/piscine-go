@@ -7,5 +7,4 @@ func main() {
 		z01.PrintRune(x)
 	}
 	z01.PrintRune('\n')
-
 }
