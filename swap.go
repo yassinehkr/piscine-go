@@ -1,7 +1,7 @@
 package piscine
 
-func Swap(a int, bint) {
+func Swap(a *int, b*int) {
     p := *a
-    a =b
+    a = b
     *b = p
 }
