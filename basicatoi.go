@@ -7,4 +7,3 @@ func BasicAtoi(s string) int {
 	}
 	return result
 }
-
