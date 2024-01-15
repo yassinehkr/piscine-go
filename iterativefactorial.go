@@ -1,4 +1,11 @@
-package piscine
+package main
+
+import "fmt"
+
+func main() {
+	arg := 4
+	fmt.Println(IterativeFactorial(arg))
+}
 
 func IterativeFactorial(nb int) int {
 	if nb == 1 {
