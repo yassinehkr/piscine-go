@@ -1,6 +1,6 @@
 package piscine
 
-func IsUpper(s string) bool {
+func IsLower(s string) bool {
 	r := []rune(s)
 	for x := 0; x < len(s); x++ {
 		if r[x] < 'a' || r[x] > 'z' {
