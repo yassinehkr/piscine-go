@@ -1,8 +1,10 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
 func PrintDigitsInOrder(n int) {
 	if n == 0 {
-		fmt.Print("0")
+		z01.PrintRune("0")
 		return
 	}
 
@@ -25,5 +27,5 @@ func PrintDigitsInOrder(n int) {
 		}
 	}
 
-	z01.Print(string(s))
+	z01.PrintRune(string(s))
 }
