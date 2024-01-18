@@ -9,7 +9,7 @@ func sort(tab []int) {
 		j++
 	}
 	i := 1
-	for lg > i {
+	for l > i {
 		if tab[i-1] > tab[i] {
 			tab[i], tab[i-1] = tab[i-1], tab[i]
 			i = 1
