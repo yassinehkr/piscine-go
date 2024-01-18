@@ -25,5 +25,5 @@ func PrintDigitsInOrder(n int) {
 		}
 	}
 
-	fmt.Print(string(s))
+	z01.Print(string(s))
 }
