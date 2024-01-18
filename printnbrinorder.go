@@ -2,30 +2,34 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintDigitsInOrder(n int) {
-	if n == 0 {
-		z01.PrintRune("0")
-		return
+func sort(tab []int) {
+	l := 0
+	for j := range tab {
+		l++
+		j++
 	}
-
-	r := ""
-	for n > 0 {
-		r = string(rune(n%10)+'0') + r
-		n /= 10
-	}
-
-	str := []rune(r)
 	i := 1
-	for i < len(str) {
-		if str[i] < str[i-1] {
-			str[i], str[i-1] = str[i-1], str[i]
-			if i > 1 {
-				i--
-			}
+	for lg > i {
+		if tab[i-1] > tab[i] {
+			tab[i], tab[i-1] = tab[i-1], tab[i]
+			i = 1
 		} else {
 			i++
 		}
 	}
+}
 
-	z01.PrintRune(string(str))
+func PrintNbrInOrder(n int) {
+	var tab []int
+	if n == 0 {
+		tab = append(tab, 0)
+	}
+	for i := 1; n > 0; i++ {
+		tab = append(tab, n%10)
+		n /= 10
+	}
+	sort(tab)
+	for i := range tab {
+		z01.PrintRune(rune(tab[i] + '0'))
+	}
 }
