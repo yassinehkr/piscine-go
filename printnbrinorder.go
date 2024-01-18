@@ -14,11 +14,11 @@ func PrintDigitsInOrder(n int) {
 		n /= 10
 	}
 
-	s := []rune(r)
+	str := []rune(r)
 	i := 1
-	for i < len(s) {
-		if s[i] < s[i-1] {
-			s[i], s[i-1] = s[i-1], s[i]
+	for i < len(str) {
+		if str[i] < str[i-1] {
+			str[i], str[i-1] = str[i-1], str[i]
 			if i > 1 {
 				i--
 			}
@@ -27,5 +27,5 @@ func PrintDigitsInOrder(n int) {
 		}
 	}
 
-	z01.PrintRune(string(s))
+	z01.PrintRune(string(str))
 }
