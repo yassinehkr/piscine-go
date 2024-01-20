@@ -4,9 +4,9 @@ func MakeRange(min, max int) []int {
 	if min > max {
 		return nil
 	}
-	a := make([]int, max-min)
+	x := make([]int, max-min)
 	for i := min; i < max; i++ {
-		a[i-min] = i
+		x[i-min] = i
 	}
-	return a
+	return x
 }
