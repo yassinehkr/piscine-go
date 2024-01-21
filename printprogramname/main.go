@@ -1,10 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 	"os"
 )
 
 func main() {
-	fmt.Println("Porgrame name :", os.Args[0])
+	x := os.Args[0]
+	for _, v := range x {
+		z01.PrintRune(v)
+	}
+	{
+		z01.PrintRune('\n')
+	}
 }
