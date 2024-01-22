@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/01-edu/z01"
@@ -27,8 +26,8 @@ func main() {
 	OddMsg := "I have an odd number of arguments"
 	lengthOfArg := len(os.Args[1:])
 	if isEven(lengthOfArg) {
-		fmt.Println(EvenMsg)
+		printStr(EvenMsg)
 	} else {
-		fmt.Println(OddMsg)
+		printStr(OddMsg)
 	}
 }
