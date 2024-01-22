@@ -2,7 +2,7 @@ package main
 
 import "github.com/01-edu/z01"
 
-const a = "x = 42, y = 21"
+const a = "x = 42, y = 21\n"
 
 type point struct {
 	x, y int
