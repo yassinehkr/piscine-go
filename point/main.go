@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 const a = "x = 42, y = 21"
 
