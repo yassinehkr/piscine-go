@@ -10,15 +10,15 @@ func main() {
 	s := os.Args
 
 	if len(s) > 2 {
-		fmt.Println("Too many arguments")
+		fmt.Printf("Too many arguments")
 	} else if len(s) < 2 {
-		fmt.Println("File name missing")
+		fmt.Printf("File name missing")
 	} else {
 		content, err := ioutil.ReadFile(os.Args[1])
 		if err != nil {
-			fmt.Println(err.Error())
+			fmt.Printf(err.Error())
 		} else {
-			fmt.Println(string(content))
+			fmt.Printf(string(content))
 		}
 	}
 }
