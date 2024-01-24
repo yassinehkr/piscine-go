@@ -3,10 +3,10 @@ package piscine
 import "github.com/01-edu/z01"
 
 func DescendComb() {
-	for x := '9'; x <= '0'; x-- {
-		for y := '9'; y <= '0'; y-- {
-			for i := '9'; i <= '0'; i-- {
-				for j := '9'; j <= '0'; j-- {
+	for x := '9'; x >= '0'; x-- {
+		for y := '9'; y >= '0'; y-- {
+			for i := '9'; i >= '0'; i-- {
+				for j := '9'; j >= '0'; j-- {
 					if (x < i) || (x == i && y < j) {
 						z01.PrintRune(x)
 						z01.PrintRune(y)
@@ -26,3 +26,4 @@ func DescendComb() {
 		}
 	}
 }
+
