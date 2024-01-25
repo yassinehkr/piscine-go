@@ -26,7 +26,6 @@ func main() {
 			for _, v := range strFile {
 				z01.PrintRune(v)
 			}
-			z01.PrintRune('\n')
 		}
 	}
 	if lens == 0 {
